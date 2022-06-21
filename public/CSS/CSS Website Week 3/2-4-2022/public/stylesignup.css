@@ -1,0 +1,61 @@
+body{
+    margin: 0px;
+}
+div.mainbody{
+    width: 100%;
+    display: flex;
+}
+div.mainbody div.left{
+    width: 55%;
+}
+div.mainbody div.right{
+    width: 45%;
+}
+div.mainbody div.right img.twitter_icon{
+    width: 43px;
+    height: 43px;
+    margin: 40px 0px 0px 40px;
+}
+div.mainbody div.right p.hn{
+    font-size: 64px;
+    font-weight: 700;
+    margin: 58px 0px 40px 40px;
+    color: rgb(15,20,25);
+}
+div.mainbody div.right p.jtt{
+    color: rgb(15,20,25);
+    line-height: 36px;
+    margin: 40px;
+    font-size: 31px;
+    font-weight: 700;
+}
+div.mainbody div.right div.button_container{
+    margin: 0px 0px 0px 40px;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    width: fit-content;
+}
+div.mainbody div.right div.button_container button{
+    width: 300px;
+    height: 40px;
+    font-weight: 700;
+    color: rgb(15,20,25);
+    border-radius: 20px;
+    border: 1px solid gray; 
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.mainbody div.right div.button_container p{
+    margin: 10px;
+}
+div.mainbody div.right div.button_container button.signup{
+    color: white;
+    background-color: blueviolet;
+}
+div.mainbody div.right div.button_container button.signup a{
+    text-decoration: none;
+    color: white;
+}

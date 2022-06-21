@@ -1,0 +1,72 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+div.heading{
+    text-align: center;
+    width: 100%;
+    height: 150px;
+}
+div.heading span.first{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+div.heading span.second{
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+div.heading span.third{
+    font-family: 'Courier New', Courier, monospace;
+}
+div.home_menu{
+    width: 100%;
+    height: 80px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    border-color:black;
+    border-width: 5px 0px 5px 0px;
+    border-style: solid;
+}
+div.home_menu ul{
+    list-style: none;
+    padding: 30px 0px 30px 0px;
+    margin: 0px;
+    height: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: bold;
+}
+div.home_menu ul li{
+    padding: 0px 50px 0px 50px;
+    display: inline;
+}
+div.piano_image{
+    width: 100%;
+    height: 445px;
+    display: inline-block;
+}
+div.piano_image div.image1{
+    width: 445px;
+    height: 100%;
+    float: left;
+}
+div.piano_image div.image2{
+    width: 445px;
+    height: 100%;
+    float: left;
+}
+div.piano_image div.image3{
+    width: 445px;
+    height: 100%;
+    float: right;
+}
+div.paragraph{
+    text-align: center;
+    width: 100%;
+    height: 150px;
+}
+div.paragraph p{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 36px;
+}

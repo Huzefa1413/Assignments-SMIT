@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Marksheet</title>
+    <link rel="stylesheet" href="./marksheetstyle.css">
+</head>
+<body>
+    <div id="form" class="forms">
+    <h1>Marksheet Info Input Form</h1>
+    <table>
+        <tr>
+            <th colspan="2">Personal Information</th>
+        </tr>
+        <tr>
+            <td>Enter Marksheet No.</td>
+            <td><input type="text" id="mno"></td>
+        </tr>
+        <tr>
+            <td>Enter Group</td>
+            <td><input type="text" id="grp"></td>
+        </tr>
+        <tr>
+            <td>Enter Roll No.</td>
+            <td><input type="text" id="rno"></td>
+        </tr>
+        <tr>
+            <td>Enter Enrolment / Registeration No</td>
+            <td><input type="text" id="eno"></td>
+        </tr>
+        <tr>
+            <td>Enter Name</td>
+            <td><input type="text" id="name"></td>
+        </tr>
+        <tr>
+            <td>Enter Father's Name</td>
+            <td><input type="text" id="fname"></td>
+        </tr>
+        <tr>
+            <td>Enter College / Private</td>
+            <td><input type="text" id="clg"></td>
+        </tr>
+        <tr>
+            <th colspan="2">Part I Marks</th>
+        </tr>
+        <tr>
+            <td>Enter Part I Urdu Theory Marks</td>
+            <td><input type="number" id="UTI" ></td>
+        </tr>
+        <tr>
+            <td>Enter Part I English Theory Marks</td>
+            <td><input type="number" id="ETI"></td>
+        </tr>
+        <tr>
+            <td>Enter Part I Islamic Education Theory Marks</td>
+            <td><input type="number" id="ITI"></td>
+        </tr>
+        <tr>
+            <td>Enter Part I Chemistry Theory Marks</td>
+            <td><input type="number" id="CTI"></td>
+        </tr>
+        <tr>
+            <td>Enter Part I Chemistry Practical Marks</td>
+            <td><input type="number" id="CPI"></td>
+        </tr>
+        <tr>
+            <td>Enter Part I Physics Theory Marks</td>
+            <td><input type="number" id="PTI"></td>
+        </tr>
+        <tr>
+            <td>Enter Part I Physics Practical Marks</td>
+            <td><input type="number" id="PPI"></td>
+        </tr>
+        <tr>
+            <td>Enter Part I Mathematics Theory Marks</td>
+            <td><input type="number" id="MTI"></td>
+        </tr>
+        <tr>
+            <th colspan="2">Part II Marks</th>
+        </tr>
+        <tr>
+            <td>Enter Part II Urdu Theory Marks</td>
+            <td><input type="number" id="UTII"></td>
+        </tr>
+        <tr>
+            <td>Enter Part II English Theory Marks</td>
+            <td><input type="number" id="ETII"></td>
+        </tr>
+        <tr>
+            <td>Enter Part II Pakistan Studies Theory Marks</td>
+            <td><input type="number" id="PSTII"></td>
+        </tr>
+        <tr>
+            <td>Enter Part II Chemistry Theory Marks</td>
+            <td><input type="number" id="CTII"></td>
+        </tr>
+        <tr>
+            <td>Enter Part II Chemistry Practical Marks</td>
+            <td><input type="number" id="CPII"></td>
+        </tr>
+        <tr>
+            <td>Enter Part II Physics Theory Marks</td>
+            <td><input type="number" id="PTII"></td>
+        </tr>
+        <tr>
+            <td>Enter Part II Physics Practical Marks</td>
+            <td><input type="number" id="PPII"></td>
+        </tr>
+        <tr>
+            <td>Enter Part II Mathematics Theory Marks</td>
+            <td><input type="number" id="MTII"></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;"><button onclick="save()">SUBMIT</button></td>
+        </tr>
+    </table>
+    </div>
+    <div class="main_div" id="marksheet">
+        <div class="heading_div">
+            <h1>BOARD OF INTERMEDIATE EDUCATION KARACHI</h1>
+            <h3>H.S.C PART - I & II INTERMEDIATE EXAMINATION (Annual - 2019)</h3>
+            <h1>Statement of Marks</h1>
+        </div>
+        <div class="personal_info">
+            <table>
+                <tr>
+                    <th>Marks Sheet No</th>
+                    <td><span id="mark_sheet_no"></span></td>
+                </tr>
+                <tr>
+                    <th>Group</th>
+                    <td><span id="group"></span></td>
+                </tr>
+                <tr>
+                    <th>Roll No.</th>
+                    <td><span id="roll_no"></span></td>
+                </tr>
+                <tr>
+                    <th>Enrolment / Registeration No</th>
+                    <td><span id="enrolment_no"></span></td>
+                </tr>
+                <tr>
+                    <th>Name</th>
+                    <td><span id="Name"></span></td>
+                </tr>
+                <tr>
+                    <th>Father's Name</th>
+                    <td><span id="fathers_name"></span></td>
+                </tr>
+                <tr>
+                    <th>College / Private</th>
+                    <td><span id="college"></span></td>
+                </tr>
+            </table>
+        </div>
+        <div class="marks">
+            <table border="1px" >
+                <tr>
+                    <th style="width: 200px;" rowspan="3">
+                        Subject
+                    </th>
+                    <th style="width: 180px;" colspan="4">
+                        Part I Marks
+                    </th>
+                    <th style="width: 180px;" colspan="4">
+                        Part II Marks
+                    </th>
+                    <th style="width: 180px;" colspan="4">
+                        Combined
+                    </th>
+                    <th style="width: 100px;" rowspan="3">
+                        %
+                    </th>
+                    <th style="width: 100px;" rowspan="3">
+                        Remarks
+                    </th>
+                </tr>
+                <tr>                 
+                    <th colspan="2">
+                        Max.
+                    </th>
+                    <th colspan="2">
+                        Secured
+                    </th>
+                    <th colspan="2">
+                        Max.
+                    </th>
+                    <th colspan="2">
+                        Secured
+                    </th>
+                    <th colspan="2">
+                        Max.
+                    </th>
+                    <th colspan="2">
+                        Secured
+                    </th>
+                </tr>
+                <tr>
+                    <td>Th.</td>
+                    <td>Pr.</td>
+                    <td>Th.</td>
+                    <td>Pr.</td>
+                    <td>Th.</td>
+                    <td>Pr.</td>
+                    <td>Th.</td>
+                    <td>Pr.</td>
+                    <td>Th.</td>
+                    <td>Pr.</td>
+                    <td>Th.</td>
+                    <td>Pr.</td>
+                </tr>
+                <tr>
+                    <th style="text-align: left;">URDU NORMAL</th>
+                    <td>100</td>
+                    <td>-</td>
+                    <td><span id="urduI_marks"></span></td>
+                    <td>-</td>
+                    <td>100</td>
+                    <td>-</td>
+                    <td><span id="urduII_marks"></span></td>
+                    <td>-</td>
+                    <td>200</td>
+                    <td>-</td>
+                    <td><span id="urdu_combined_marks"></span></td>
+                    <td>-</td>
+                    <td><span id="urdu_percentage"></span></td>
+                    <td><span id="urdu_remarks"></span></td>
+                </tr>
+                <tr>
+                    <th style="text-align: left;">ENGLISH NORMAL</th>
+                    <td>100</td>
+                    <td>-</td>
+                    <td><span id="englishI_marks"></span></td>
+                    <td>-</td>
+                    <td>100</td>
+                    <td>-</td>
+                    <td><span id="englishII_marks"></span></td>
+                    <td>-</td>
+                    <td>200</td>
+                    <td>-</td>
+                    <td><span id="english_combined_marks"></span></td>
+                    <td>-</td>
+                    <td><span id="english_percentage"></span></td>
+                    <td><span id="english_remarks"></span></td>
+                </tr>
+                <tr>
+                    <th style="text-align: left;">ISLAMIC EDUCATION</th>
+                    <td>50</td>
+                    <td>-</td>
+                    <td><span id="islamic_studiesI_marks"></span></td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</span></td>
+                    <td>-</td>
+                    <td>50</td>
+                    <td>-</td>
+                    <td><span id="islamic_studies_combined_marks"></span></td>
+                    <td>-</td>
+                    <td><span id="islamic_studies_percentage"></span></td>
+                    <td><span id="islamic_studies_remarks"></span></td>
+                </tr>
+                <tr>
+                    <th style="text-align: left;">PAKISTAN STUDIES</th>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>50</td>
+                    <td>-</td>
+                    <td><span id="pakistan_studiesII_marks"></span></td>
+                    <td>-</td>
+                    <td>50</td>
+                    <td>-</td>
+                    <td><span id="pakistan_studies_combined_marks"></span></td>
+                    <td>-</td>
+                    <td><span id="pakistan_studies_percentage"></span></td>
+                    <td><span id="pakistan_studies_remarks"></span></td>
+                </tr>
+                <tr>
+                    <th style="text-align: left;">CHEMISTRY</th>
+                    <td>85</td>
+                    <td>15</td>
+                    <td><span id="chemistryI_marks"></span></td>
+                    <td><span id="chemistry_practicalI_marks"></span></td>
+                    <td>85</td>
+                    <td>15</td>
+                    <td><span id="chemistryII_marks"></span></td>
+                    <td><span id="chemistry_practicalII_marks"></span></td>
+                    <td>170</td>
+                    <td>30</td>
+                    <td><span id="chemistry_combined_marks"></span></td>
+                    <td><span id="chemistry_practical_combined_marks"></span></td>
+                    <td><span id="chemistry_percentage"></span></td>
+                    <td><span id="chemistry_remarks"></span></td>
+                </tr>
+                <tr>
+                    <th style="text-align: left;">PHYSICS</th>
+                    <td>85</td>
+                    <td>15</td>
+                    <td><span id="physicsI_marks"></span></td>
+                    <td><span id="physics_practicalI_marks"></span></td>
+                    <td>85</td>
+                    <td>15</td>
+                    <td><span id="physicsII_marks"></span></td>
+                    <td><span id="physics_practicalII_marks"></span></td>
+                    <td>170</td>
+                    <td>30</td>
+                    <td><span id="physics_combined_marks"></span></td>
+                    <td><span id="physics_practical_combined_marks"></span></td>
+                    <td><span id="physics_percentage"></span></td>
+                    <td><span id="physics_remarks"></span></td>
+                <tr>
+                    <th style="text-align: left;">MATHEMATICS</th>
+                    <td>100</td>
+                    <td>-</td>
+                    <td><span id="mathematicsI_marks"></span></td>
+                    <td>-</td>
+                    <td>100</td>
+                    <td>-</td>
+                    <td><span id="mathematicsII_marks"></span></td>
+                    <td>-</td>
+                    <td>200</td>
+                    <td>-</td>
+                    <td><span id="mathematics_combined_marks"></span></td>
+                    <td>-</td>
+                    <td><span id="mathematics_percentage"></span></td>
+                    <td><span id="mathematics_remarks"></span></td>
+                </tr>
+                <tr>
+                    <th rowspan="2">Total</th>
+                    <th colspan="2">Max Marks I</th>
+                    <th colspan="2">Secured Marks I</th>
+                    <th colspan="2">Max Marks II</th>
+                    <th colspan="2">Secured Marks II</th>
+                    <th colspan="2">Total Max. Marks</th>
+                    <th colspan="2">Total Sec. Marks</th>
+                    <th>OverAll %</th>
+                    <th>Grade</th>
+                </tr>
+                <tr>
+                    <td colspan="2">550</td>
+                    <td colspan="2"><span id="secured_marksI"></span></td>
+                    <td colspan="2">550</td>
+                    <td colspan="2"><span id="secured_marksII"></span></td>
+                    <td colspan="2">1100</td>
+                    <td colspan="2"><span id="total_secured_marks"></span></td>
+                    <td><span id="percentage"></span> %</td>
+                    <td><span id="grade"></span></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="./javascript.js"></script>
+</body>
+</html>

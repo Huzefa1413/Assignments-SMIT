@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registeration Form</title>
+</head>
+
+<body>
+    <h2>Student Registeration Form</h2>
+    <form>
+        <fieldset>
+            <label> First Name <br><input type="text" name="first_name" maxlength="50"> (Maximum 50 characters allowed)</label>
+            <br>
+            <br>
+            <label> Father Name <br><input type="text" name="father_name" maxlength="50"> (Maximum 50 characters allowed)</label>
+            <br>
+            <br>
+            <label> CNIC <br><input type="number" name="cnic" maxlength="12"> (Maximum 12 numbers allowed)</label>
+            <br>
+            <br>
+            <label> Date of Birth <br>  <input type="date" name="date_of_birth"> </label>
+            <br>
+            <br>
+            <label> Country <br> <input type="text" name="country"></label>
+            <br>
+            <br>
+            <label> State <br> <input type="text" name="state"></label>
+            <br>
+            <br>
+            <label> City <br> <input type="text" name="city"></label>
+            <br>
+            <br>
+            <label> Address <br> <textarea name="address" cols="30" rows="10" placeholder="Enter your Address"></textarea></label>
+            <br>
+            <br>
+            <label> Postal Code <br> <input type="number" name="postal_code"> (Maximum 6 numbers allowed)</label>
+            <br>
+            <br>
+            <label> Contact <br> <input type="number" name="Contact"> (Maximum 10 numbers allowed excluding 0 )</label>
+            <br>
+            <br>
+            <label> Email Address <br> <input type="email" name="email_address"></label>
+            <br>
+            <br>
+            <label> Gender <br> 
+                Male <input type="radio" name="gender" value="Male" checked="checked">
+                Female <input type="radio" name="gender" value="Female">            
+            </label>
+            <br>
+            <br>
+            <label> Languages <br>
+                English <input type="checkbox" name="language" value="English" checked="checked">
+                Urdu <input type="checkbox" name="language" value="Urdu"> 
+                Hindi <input type="checkbox" name="language" value="Hindi"> 
+                Bangali <input type="checkbox" name="language" value="Bangali"> 
+                Chinese <input type="checkbox" name="language" value="Chinese"> 
+                Arabic <input type="checkbox" name="language" value="Arabic"> 
+            </label>
+            <br>
+            <br>
+            <label> Qualification <br> 
+                <input type="radio" name="Qualification" value="High_School"> High School (10th) <br>                
+                <input type="radio" name="Qualification" value="Higher_School"> Higher School (12th) <br>
+                <input type="radio" name="Qualification" value="Graduation"> Graduation (Bachelor) <br>
+                <input type="radio" name="Qualification" value="Post_Graduation"> Post Graduation (Masters) <br>
+                <input type="radio" name="Qualification" value="Phd"> Phd
+            </label>
+            <br>
+            <br>
+            <label> Hobbies <br> <textarea name="Hobbies" cols="30" rows="10" placeholder="Enter your Hobbies"></textarea></label>
+            <br>
+            <br>
+            <label> No of Siblings <br> <input type="number" name="siblings"></label>
+            <br>
+            <br>
+            <label> Do you have a Job ? <br>
+                Yes <input type="radio" name="job" value="Yes"> 
+                No <input type="radio" name="job" value="No"> 
+            </label>
+            <br>
+            <br>
+            <label> Upload your CV <br> <input type="file" name="user_profile"></label>
+            <br> 
+            <br>
+            <br> 
+            <input type="submit" value="Submit Your Data">
+        </fieldset>
+    </form>
+</body>
+
+</html>

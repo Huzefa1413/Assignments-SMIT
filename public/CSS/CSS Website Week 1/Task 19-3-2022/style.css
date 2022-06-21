@@ -1,0 +1,65 @@
+@font-face {
+    font-family: Personal_Font;
+    src: url(./fonts/html5_values.ttf);
+}
+@font-face {
+    font-family: Font2;
+    src: url(./fonts/LuckiestGuy.ttf);
+}
+body{
+
+    background-color: #afd5eb;
+background-color: yellow;
+}
+h1{
+    font-family: "Personal_Font";
+    font-size: 100px;
+    margin: 0%;
+    font-style: italic;
+    color: black;
+    letter-spacing: 0.2em;
+    text-align: center;
+    text-decoration: underline;
+}
+ul{
+    list-style-type: none;
+ text-align: center;   
+ font-size: 30px;
+ padding: 0%;
+}
+li{
+    display: inline;
+}
+a{
+    text-decoration: none;
+    color: red;
+    font-family: Font2;
+}
+th{
+    font-size: 50px;
+    color: darkgreen;
+    background-color: orange;
+}
+td.explain{
+   font-size: 50px;
+   color: pink;
+   background-color: red;
+   text-align: center; 
+}
+.filler{
+    color: yellow;
+}
+label{
+    font-size: 20px;
+    font-family: Font2;
+    color: red;
+}
+textarea{
+    background-color: pink;
+}
+input{
+    font-family: Font2;
+    color: red;
+    background-color: pink;
+    font-size: 20px;
+}

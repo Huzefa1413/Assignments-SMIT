@@ -1,0 +1,247 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+div.header{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    display: inline-block;
+}
+div.logo{
+    margin: 0px;
+    width: 246px;
+    height: 60px;
+    background-color: red;
+    float: left;
+    text-align: center;
+    padding: 20px 10px 20px 10px;
+    border-width:0px 1px 0px 0px;
+    border-color: white;
+    border-style: solid;
+}
+div.edition{
+    padding: 0px;
+    margin: 0px;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    float: left;
+    color: white;
+    text-align: left;
+    border-width:0px 1px 0px 0px;
+    border-color: white;
+    border-style: solid;
+}
+div.edition h5{
+    margin: 25px 0px 0px 15px;
+}
+div.edition h2{
+    margin: 0px 0px 0px 15px;
+}
+div.news,div.sectors,div.analysis{
+    padding: 0px;
+    margin: 0px;
+    width: 190px;
+    height: inherit;
+    background-color: black;
+    float: left;
+    color: white;
+    border-width:0px 1px 0px 0px;
+    border-color: white;
+    border-style: solid;
+}
+h2.top{
+    margin: 40px 0px 0px 15px;
+}
+h2.bottom{
+    margin: 0px 0px 0px 15px;
+}
+div.register_search{
+    padding: 0px;
+    margin: 0px;
+    width: 394px;
+    height: inherit;
+    background-color: aqua;
+    float: right;
+}
+div.register_search div.register{
+    background-color: black;
+    width: 100%;
+    height: 50px;
+}
+div.register_search div.register div.signin{
+    margin: 0px;
+    padding: 5px 0px 0px 0px;
+    background-color: gray;
+    width: 70%;
+    float: right;
+}
+div.register_search div.register div.signin p{
+    margin: 0px;
+    padding: 0px;
+    text-align: right;
+    font-size: large;
+    color: white;
+}
+div.register_search div.register button{
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    background-color: black;
+    font-size: large;
+    height: 40px;
+    padding: 9px 4px 0px 0px;
+    width: 29%;
+    text-align: right;
+    border-width: 0px;
+}
+div.register_search div.search{
+    background-color: black;
+    width: 100%;
+    height: 50px;
+}
+div.register_search div.search input{
+    padding: 0px;
+    margin: 1px 1px 5px 5px;
+    height: 40px;
+    width: 300px;
+    font-size: 20px;
+}
+div.register_search div.search button{
+    padding: 0px;
+    margin: 1px 1px 5px 0px;
+    height: 40px;
+    width: 80px;
+    font-size: 20px;
+    background-color: red;
+    color: white;
+}
+div.main_body{
+    width: 97%;
+    height: 750px;
+    margin: 16px 0px 0px 22px;
+}
+div.main_body div.left{
+    width: 70%;
+    height: 750px;
+    float: left;
+    display: inline-block;
+}
+h1.heading{
+    margin: 22px 22px 0px 22px;
+    border-width:0px 0px 3px 0px;
+    border-color: gray;
+    border-style: solid;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+ul.topics{
+    margin: 5px 0px 30px 22px;
+    padding: 0px;
+}
+ul.topics li{
+    display: inline;
+    list-style: none;
+    padding: 5px;
+    color: blue;
+}
+div.main_body div.left div.first{
+    width: 23.65%;
+    height: 100px;
+    border-width:0px 2px 0px 0px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
+    float: left;
+}
+div.main_body div.left div.change{
+    width: 15%;
+    height: 100px;
+    border-width:0px 2px 0px 0px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
+    float: left;
+}
+div.main_body div.left div.open, div.main_body div.left div.high, div.main_body div.left div.low{
+    width: 15%;
+    height: 100px;
+    border-width:0px 2px 0px 0px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
+    float: left;
+}
+div.main_body div.left div.times{
+    width: 15%;
+    height: 100px;
+    text-align: center;
+    float: left;
+}
+hr{
+    border-color: gray;
+}
+div.main_body div.right{
+    width: 30%;
+    height: 750px;
+    float: right;
+}
+div.market{
+    background-color: skyblue;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100px;
+}
+div.market h1{
+    color: white;
+    margin: 0px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+div.market ul{
+    padding: 0px;
+    margin: 0px;
+    padding: 20px 0px 0px 20px;
+}
+div.market ul li{
+    color: white;
+    display: inline;
+    list-style: none;
+    padding: 10px;
+}
+div.market ul li:hover{
+    background-color: aqua;
+    color: blue;
+}
+div.main_body div.right p{
+    margin: 10px;
+}
+div.main_body div.right button{
+    background-color: red;
+    color: white;
+    font-size: 20px;
+}
+div.main_body div.right td{
+    height: 45px;
+}
+div.main_body div.right table input{
+    padding: 0px;
+    margin: 0px;
+    height: 30px;
+    width: 300px;
+    font-size: 15px;
+}
+div.main_body div.right table button{
+    padding: 0px;
+    margin: 0px;
+    height: 30px;
+    width: 90px;
+    font-size: 15px;
+    background-color: red;
+    color: white;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Application</title>
+</head>
+
+<body>
+    <h2 align="center">Application For Permission To Date My Daughter</h2>
+    <p><b>Note:</b> Form is to be completed 21 days prior to date</p>
+    <form>
+        <fieldset>
+            <legend><b>Personal Details</b></legend>
+            <label>Name: <input type="text" name="name" placeholder="Enter name here"></label>
+            <br><br>
+            <label>Address: <input type="text" name="address" placeholder="Enter address here"></label>
+            <br><br>
+            <label>Email: <input type="email" name="email" placeholder="Enter email here"></label>
+            <br><br>
+            <label>Phone Number: <input type="number" name="number" placeholder="Enter 10 digit number"></label>
+            <br><br>
+            <label>IQ: <input type="number" name="iq" placeholder="Enter IQ here"></label>
+            <br><br>
+            <label>Gender: <br><br> 
+                <input type="radio" name="gender" value="male">Male
+                <br>
+                <input type="radio" name="gender" value="female">Female
+                <br>
+                <input type="radio" name="gender" value="other">Other
+                <br>
+            </label>
+            <br>
+            <label>Date of Proposed Outing: <input type="date" name="date"></label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <label>Check All That Apply <br>
+                <br> <input type="checkbox" name="qualities" value="I_have_tattoos_and/or_piercings">I have tattoos and/or piercings
+                <br> <input type="checkbox" name="qualities" value="I_am_more_than_two_years_older_than_your_daughter">I am more than two years older than your daughter
+                <br> <input type="checkbox" name="qualities" value="I_own_a_panel_van_or_V8_ute">I own a panel van or V8 ute
+                <br> <input type="checkbox" name="qualities" value="I_work_full_time">I work full time
+                <br> <input type="checkbox" name="qualities" value="My_parents_are_rich">My parents are rich
+                <br> <input type="checkbox" name="qualities" value="Is_the_date_at_well_lit_public_location">Is the date at well lit public location
+            </label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <label>Political Persuasion: 
+                <select name="politics">
+                    <option value="Choose">Choose</option>
+                    <option value="far_left">Far Left</option>
+                    <option value="left_wing">Left Wing</option>                   
+                    <option value="center_left">Center Left</option>
+                    <option value="center">Center</option>
+                    <option value="radical_center">Radical Center</option>
+                    <option value="center_right">Center Right</option>
+                    <option value="right_wing">Right Wing</option>
+                    <option value="far_right">Far Right</option>
+                </select>
+            </label>
+            <label>Education Level Completed: 
+                <select name="education">
+                    <option value="Choose">Choose</option>
+                    <option value="School">School</option>
+                    <option value="College">College</option>
+                    <option value="University">University</option>
+                </select>
+            </label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><b>Essay Section</b></legend>
+            <label>In 50 words or more explain why you want to date my daughter <br> <textarea name="dating_reason" cols="45" rows="3" placeholder="Enter Text Here"></textarea></label>
+            <br><br>
+            <label>Please upload contact details for 2 references <br> <textarea name="contact_details" cols="45" rows="3" placeholder="Enter Text Here"></textarea></label>
+            <br><br>
+            <label>Upload Police Clearance Certificate, Bank Statement and Medical Certificates here: <input type="file" name="info"></label>
+            <br><br>
+            <input type="submit" value="Submit Your Application">
+        </fieldset>
+    </form>
+</body>
+
+</html>

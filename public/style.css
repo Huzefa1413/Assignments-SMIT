@@ -1,0 +1,32 @@
+body{
+    background-color: skyblue;
+}
+div.maindiv{
+    display: flex;
+}
+div.html,div.css,div.javascript{
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: gold;
+}
+ul{
+    padding: 0px;
+}
+li{
+    list-style: none;
+}
+a{
+    font-style: italic;
+    color: snow;
+    font-family: 'Courier New', Courier, monospace;
+}
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: brown;
+}
+h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}

@@ -1,0 +1,159 @@
+body{
+    margin: 0px;
+}
+div.mainbody{
+    display: flex;
+}
+div.mainbody div.left{
+    width: 23.5%;
+}
+div.mainbody div.left ul{
+    margin: 0px 0px 0px 45px;
+    padding: 0px;
+    list-style: none;
+    font-size: 19px;
+}
+div.mainbody div.left ul li.list{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 14px 25px 14px 14px;
+    width: fit-content;
+    border-radius: 100px;
+}
+div.mainbody div.left ul li.logo{
+    padding: 14px 14px 10px 14px;
+    width: fit-content;
+    border-radius: 100px;
+}
+div.mainbody div.left ul li.btn{
+    width: fit-content;
+    border-radius: 100px;
+}
+div.mainbody div.left ul li.logo:hover{
+    background-color: #eff3f4;
+}
+div.mainbody div.left ul li.list:hover{
+    background-color: #eff3f4;
+}
+div.mainbody div.left ul li button{
+    background-color: #1d9bf0;
+    font-size: 17px;
+    color: #ffffff;
+    width: 230px;
+    padding: 15px 32px;
+    border-radius: 9999px;
+    font-weight: 700;
+    border: 0px;
+    margin: 10px;
+}
+div.mainbody div.left ul li.list img{
+    height: 26px;
+    margin-right: 20px;
+}
+div.mainbody div.left ul li.logo img{
+    height: 26px;
+}
+div.mainbody div.center{
+    width: 44.5%;
+    border-width: 0px 1px 0px 1px;
+    border-style: solid;
+    border-color: lightgray;
+}
+div.mainbody div.center p.heading{
+    margin: 0px 0px 8px 0px;
+    padding: 100px 100px 0px 100px;
+    color: #0f1419;
+    font-size: 31px;
+    line-height: 36px;
+    font-weight: 800;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+div.mainbody div.center p.text{
+    margin: 0px 0px 28px 0px;
+    padding: 0px 100px 0px 100px;
+    color: #536471;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+div.mainbody div.center button{
+    background-color: #1d9bf0;
+    font-size: 17px;
+    color: #ffffff;
+    width: 150px;
+    padding: 15px 32px;
+    border-radius: 9999px;
+    font-weight: 700;
+    border: 0px;
+    margin: 0px 100px 0px 100px;
+}
+div.mainbody div.center button a{
+    text-decoration: none;
+    color: #ffffff;
+}
+div.mainbody div.right{
+    width: 32%;
+}
+div.mainbody div.right div.searchbox{
+    margin: 5px 48px 0px 28px;
+    display: flex;
+}
+div.mainbody div.right div.searchbox input{
+    width: 325px;
+    height: 43px;
+    border: 0px;
+    padding: 12px;
+    font-size: 15px;
+    margin: 0px;
+    background-color: #eff3f4;
+    border-radius: 0px 100px 100px 0px;
+    font-weight: 400;
+}
+div.mainbody div.right div.searchbox button{
+    background-color: #eff3f4;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    width: 43px;
+    height: 43px;
+    border-radius: 100px 0px 0px 100px;
+}
+div.mainbody div.right div.searchbox button img{
+    width: 70%;
+    height: 70%
+}
+div.mainbody div.right div.trends{
+    margin: 20px 48px 0px 28px;
+    background-color: #eff3f4;
+    border-radius: 10px;
+}
+div.mainbody div.right div.trends div.head{
+    padding: 12px;
+}
+div.mainbody div.right div.trends div.head p.heading{ 
+    margin: 0px;
+    font-size: 20px;
+    color: #0f1419;
+    font-weight: 800;
+    line-height: 24px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+div.mainbody div.right div.trends div.trending{
+    padding: 12px;
+}
+div.mainbody div.right div.trends div.trending p.small{
+    margin: 0px;
+    padding: 0px;
+    font-size: 13px;
+    color: #536471;
+}
+div.mainbody div.right div.trends div.trending p.hashtag{
+    margin: 0px;
+    padding: 0px;
+    font-size: 15px;
+    color: #0f1419;
+    font-weight: 700;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}

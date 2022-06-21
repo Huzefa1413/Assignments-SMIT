@@ -1,0 +1,14 @@
+div.maindiv{
+    display: flex;
+}
+div.normal,div.vowel{
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+ul{
+}
+li{
+    list-style: none;
+}

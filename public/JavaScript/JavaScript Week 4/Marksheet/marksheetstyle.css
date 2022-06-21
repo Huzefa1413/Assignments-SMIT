@@ -1,0 +1,87 @@
+div.forms{
+    background-color: bisque;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+div.forms table{
+    margin: 0px auto;
+}
+div.forms h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+div.forms table th{
+    font-size: 20px;
+    padding: 15px;
+    color: dimgrey;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+}
+div.forms table td{
+    font-family: cursive;
+}
+div.forms table input[type='number']
+{
+    width: 40px;
+    margin-left: 20px;
+}
+div.forms table input{
+    background-color: aqua;
+    border: 1px solid black;
+}
+div.forms table button{
+    padding: 10px 20px;
+    margin: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: cornflowerblue;
+    border-radius: 30px;
+}
+div.forms table button:hover{
+    background-color: blueviolet;
+    cursor: pointer;
+}
+div.main_div{
+    display: none;
+    border: 2px solid black;
+    padding: 0px 0px 50px 0px;
+    background-color: bisque;
+    
+}
+div.main_div div.heading_div{
+    border: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div.main_div div.personal_info{
+    border: 0px;
+    padding: 0px;
+    display: flex;
+}
+div.main_div div.personal_info table{
+    border-spacing: 10px;
+    padding-left: 105px;
+    padding-top: 50px;
+}
+div.main_div div.personal_info th{
+    float: left;
+    padding-right: 30px;
+}
+div.main_div div.personal_info img{
+    padding-left: 300px;
+}
+div.main_div div.marks table{
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 0px;
+}
+div.main_div div.marks table td{
+    text-align: center;
+}
+
+

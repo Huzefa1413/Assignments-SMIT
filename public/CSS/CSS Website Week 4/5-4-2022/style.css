@@ -1,0 +1,96 @@
+div#top {
+    background-color: darkcyan;
+    width: 15in;
+    height: 2in;
+}
+
+body {
+    background-color: rgb(185, 204, 204);
+}
+
+div#main {
+    height: 6in;
+    width: 10.5in;
+    border: solid black;
+    position: absolute;
+    left: 2in;
+    top: 1in;
+    background-image: url("https://w0.peakpx.com/wallpaper/818/148/HD-wallpaper-whatsapp-background-cool-dark-green-new-theme-whatsapp.jpg");
+    background-repeat: none;
+}
+
+div#name {
+    margin-left: 0.1in;
+    margin-top: 0.1in;
+    width: 3.5in;
+    height: 5.8in;
+    border: solid rgb(231, 227, 227);
+
+}
+
+div#chat {
+    position: absolute;
+    top: 0.1in;
+    left: 3.8in;
+    width: 6.5in;
+    height: 5.8in;
+    border: solid rgb(231, 227, 227);
+    background-color: azure;
+}
+
+img#img1 {
+    margin-left: 1.3in;
+    margin-top: 0.7in;
+    border-radius: 150px;
+    opacity: 0.6;
+}
+
+h2#web {
+    position: absolute;
+    top: 4.2in;
+    margin-left: 1.5in;
+    font-family: Helvetica;
+    opacity: 0.4;
+}
+
+p#a1 {
+    position: absolute;
+    top: 4.7in;
+    margin-left: 0.5in;
+    font-family: Helvetica;
+    opacity: 0.4;
+}
+
+div#name {
+    background-color: azure;
+}
+
+div.tabs {
+    width: 3.4in;
+    height: 0.7in;
+   
+}
+
+img#a2 {
+    position: relative;
+    margin-left: 0in;
+    margin: 10px;
+    width: 98%;
+    height: 80%;
+    border-radius:50px;
+}
+
+#a3 {
+    width: 2.9in;
+    height: 0.4in;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    padding-left:1cm ;
+    margin: 0.1in; 
+    border-radius:30px;
+    opacity: 0.4;
+}
+img#a4{
+    width: 3.4in;
+}
