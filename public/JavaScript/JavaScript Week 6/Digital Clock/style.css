@@ -1,0 +1,47 @@
+div.main{
+    background-color: rgb(39, 30, 30);
+    padding: 15px 15px 0px 15px;
+    margin: 20px 0px 0px 20px;
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 10px 10px 0px 0px;
+}
+span#hours{
+font-size: 80px;
+color: blueviolet;
+}
+span#colon{
+    font-size: 80px;
+    color: red;
+}
+span#minutes{
+    font-size: 80px;
+    color: brown;
+}
+div.am{
+    margin: 20px 10px;
+}
+div.second{
+    margin: 20px 10px;
+}
+span#am{
+color: green;
+font-size: 17px;
+}
+span#seconds{
+    font-size: 17px;
+    color: yellowgreen;
+}
+div.date{
+    width: 187px;
+    background-color: rgb(39, 30, 30);
+    border-radius: 0px 0px 10px 10px;
+    margin: 0px 0px 0px 20px;
+    padding: 0px 0px 15px 70px;
+    
+}
+div.date span{
+    color: blue;
+    font-size: 17px;
+}

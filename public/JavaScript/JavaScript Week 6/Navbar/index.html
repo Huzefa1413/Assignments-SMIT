@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Navbar with Login/Signup Modal</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a data-toggle="modal" href="#signUpModal"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a data-toggle="modal" href="#loginModal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 style="color:red;"><span class="glyphicon glyphicon-lock"></span> Login</h4>
+        </div>
+        <div class="modal-body">
+          <form role="form">
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+              <input type="text" class="form-control" id="usrnamelogin" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+              <input type="text" class="form-control" id="pswlogin" placeholder="Enter password">
+            </div>
+            <button type="submit" class="btn btn-default btn-success btn-block" onclick="check()" data-dismiss="modal"><span
+                class="glyphicon glyphicon-off"></span> Login</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-default btn-default pull-left" data-dismiss="modal"><span
+              class="glyphicon glyphicon-remove"></span> Cancel</button>
+          <p>Not a member? <a data-toggle="modal" href="#signUpModal">Sign Up</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sign Up Modal -->
+  <div class="modal fade" id="signUpModal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 style="color:red;"><span class="glyphicon glyphicon-lock"></span> Sign Up</h4>
+        </div>
+        <div class="modal-body">
+          <form role="form">
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+              <input type="text" class="form-control" id="usrnamesignup" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+              <input type="text" class="form-control" id="pswsignup" placeholder="Enter password">
+            </div>
+            <button type="submit" class="btn btn-default btn-success btn-block" onclick="save()" data-dismiss="modal"><span
+                class="glyphicon glyphicon-off"></span> Sign Up</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-default btn-default pull-left" data-dismiss="modal"><span
+              class="glyphicon glyphicon-remove"></span> Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  var username = [];
+  var password = [];
+
+  function save() {
+    var user = document.getElementById("usrnamesignup").value;
+    var pass = document.getElementById("pswsignup").value;
+    if (user == 0 || pass == 0) {
+      alert("Username Or Password Missing");
+    }
+    else {
+      username.push(user);
+      password.push(pass);
+      console.log(username);
+      console.log(password);
+      alert("User Succesfully Created");
+    }
+  }
+
+  function check() {
+    var user = document.getElementById("usrnamelogin").value;
+    var pass = document.getElementById("pswlogin").value;
+    var check = false;
+    if (user == 0 || pass == 0) {
+      alert("Username Or Password Missing");
+    }
+    else {
+      for (var i = 0; i < username.length; i++) {
+        if (user == username[i] && pass == password[i]) {
+          alert("Login Successfull");
+          check = true;
+          break;
+        }
+      }
+      if(check == false)
+      {
+        alert("Invalid Username Or Password");
+      }
+    }
+  }
+</script>
+
+</html>
