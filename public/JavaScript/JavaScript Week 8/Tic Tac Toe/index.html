@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="gameContainer">
+        <div class="container">
+        <div class="box bt-0 bl-0" onclick="addText0()" id="box0"></div>
+        <div class="box bt-0" onclick="addText1()" id="box1"></div>
+        <div class="box bt-0 br-0" onclick="addText2()" id="box2"></div>
+        <div class="box bl-0" onclick="addText3()" id="box3"></div>
+        <div class="box" onclick="addText4()" id="box4"></div>
+        <div class="box br-0" onclick="addText5()" id="box5"></div>
+        <div class="box bl-0 bb-0" onclick="addText6()" id="box6"></div>
+        <div class="box bb-0" onclick="addText7()" id="box7"></div>
+        <div class="box bb-0 br-0" onclick="addText8()" id="box8"></div>
+      </div>
+      <div class="gameInfo">
+        <h1>Welcome to My Tic Tac Toe</h1>
+        <div>
+          <span id="info"></span>
+          <button id="reset" onclick="resetGame()">Reset</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

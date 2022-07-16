@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Head Tail Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="heading">
+        <h1>Head Tail Game</h1>
+        <h3 id="timer">Timer <span id="output"></span></h3>
+        <button id="start" onclick="start()">Start Game</button>
+        <h1 id="gameoverheading">Game Over</h1>
+        <h2><span id="winner"></span></h1>
+    </div>
+   
+    <div id="mainbody">
+        <div class="user1">
+            <h2><span id="turn1"></span> User 1</h2>
+            <div class="radio">
+                <label>Head <input type="radio" name="headtail1" value="head"></label> 
+                <label>Tail <input type="radio" name="headtail1" value="tail"></label>           
+            </div>
+            <h2>Score : <span id="score1"></span></h2>
+        </div>
+        <div class="user2">
+            <h2><span id="turn2"></span> User 2</h2>
+            <div class="radio">
+                <label>Head <input type="radio" name="headtail2" value="head"></label>  
+                <label>Tail <input type="radio" name="headtail2" value="tail"></label>           
+            </div>
+            <h2>Score : <span id="score2"></span></h2>
+        </div>
+    </div>
+    <div class="submitbutton">
+        <button id="submit" onclick="check()">Submit</button>
+        <button id="gameover" onclick="gameOver()">End Game</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

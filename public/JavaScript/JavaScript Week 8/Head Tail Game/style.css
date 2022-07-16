@@ -1,0 +1,88 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-image: linear-gradient(to right, blue , violet);
+}
+div.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+    flex-direction: column;
+}
+h1{
+    font-size: 40px;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+#timer{
+    display: none;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),0px 8px 13px rgba(0,0,0,0.1),0px 18px 23px rgba(0,0,0,0.1);
+}
+#gameoverheading{
+    display: none;
+}
+#winner{
+    display: none;
+}
+#mainbody{
+    justify-content: center;
+    display: none;
+}
+#mainbody>div{
+    display: flex;
+    justify-content: center;
+    padding: 10px 10%;
+    flex-direction: column;
+    align-items: center;
+}
+h2{
+    font-size: 35px;
+    color: coral;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.radio{
+    display: flex;
+    padding: 20px 0px;
+}
+.radio label{
+    margin: 0 20px;
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+div.submitbutton{
+    display: flex;
+    justify-content: center;
+}
+.submitbutton button{
+    display: none;
+    margin: 30px;
+    padding: 30px;
+    font-size: 2.5rem;
+    border-radius: 10px;
+    background-color: burlywood;
+    cursor: pointer;
+}
+
+#start{
+    margin: 30px;
+    padding: 30px;
+    font-size: 2.5rem;
+    border-radius: 10px;
+    background-color: burlywood;
+    cursor: pointer;
+}
+@media screen and (max-width: 750px) {
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .radio label{
+        font-size: 15px;
+    }
+  }
