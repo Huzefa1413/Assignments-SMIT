@@ -57,9 +57,6 @@ function start()
     {
         document.getElementById("turn2").innerText = "Turn Of";
     }
-    setTimeout(function(){
-        gameOver();
-    },180000)
 }
 function gameOver()
 {

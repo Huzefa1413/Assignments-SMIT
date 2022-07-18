@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <h1>Word Search</h1>
+            <div class="wordbox">
+                <div id="letter0"></div>
+                <div id="letter1"></div>
+                <div id="letter2"></div>
+                <div id="letter3"></div>
+                <div id="letter4"></div>
+                <div id="letter5"></div>
+                <div id="letter6"></div>
+                <div id="letter7"></div>
+                <div id="letter8"></div>
+                <div id="letter9"></div>
+                <div id="letter10"></div>
+                <div id="letter11"></div>
+                <div id="letter12"></div>
+                <div id="letter13"></div>
+                <div id="letter14"></div>
+                <div id="letter15"></div>
+                <div id="letter16"></div>
+                <div id="letter17"></div>
+                <div id="letter18"></div>
+                <div id="letter19"></div>
+                <div id="letter20"></div>
+                <div id="letter21"></div>
+                <div id="letter22"></div>
+                <div id="letter23"></div>
+                <div id="letter24"></div>
+                <div id="letter25"></div>
+                <div id="letter26"></div>
+                <div id="letter27"></div>
+            </div>
+            <div class="container">
+                <div id="box0" onclick='add(this.id)'>x</div>
+                <div id="box1" onclick='add(this.id)'>x</div>
+                <div id="box2" onclick='add(this.id)'>x</div>
+                <div id="box3" onclick='add(this.id)'>x</div>
+                <div id="box4" onclick='add(this.id)'>x</div>  
+                <div id="box5" onclick='add(this.id)'>x</div>
+                <div id="box6" onclick='add(this.id)'>x</div>
+                <div id="box7" onclick='add(this.id)'>x</div>
+                <div id="box8" onclick='add(this.id)'>x</div>
+                <div id="box9" onclick='add(this.id)'>x</div>
+                <div id="box10" onclick='add(this.id)'>x</div>
+                <div id="box11" onclick='add(this.id)'>x</div>
+                <div id="box12" onclick='add(this.id)'>x</div>
+                <div id="box13" onclick='add(this.id)'>x</div>
+                <div id="box14" onclick='add(this.id)'>x</div>
+                <div id="box15" onclick='add(this.id)'>x</div>
+                <div id="box16" onclick='add(this.id)'>x</div>
+                <div id="box17" onclick='add(this.id)'>x</div>
+                <div id="box18" onclick='add(this.id)'>x</div>
+                <div id="box19" onclick='add(this.id)'>x</div>
+                <div id="box20" onclick='add(this.id)'>x</div>
+                <div id="box21" onclick='add(this.id)'>x</div>
+                <div id="box22" onclick='add(this.id)'>x</div>
+                <div id="box23" onclick='add(this.id)'>x</div>
+                <div id="box24" onclick='add(this.id)'>x</div>
+                <div id="box25" onclick='add(this.id)'>x</div>
+                <div id="box26" onclick='add(this.id)'>x</div>
+                <div id="box27" onclick='add(this.id)'>x</div>
+                <div id="box28" onclick='add(this.id)'>x</div>
+                <div id="box29" onclick='add(this.id)'>x</div>
+                <div id="box30" onclick='add(this.id)'>x</div>
+                <div id="box31" onclick='add(this.id)'>x</div>
+                <div id="box32" onclick='add(this.id)'>x</div>
+                <div id="box33" onclick='add(this.id)'>x</div>
+                <div id="box34" onclick='add(this.id)'>x</div>
+                <div id="box35" onclick='add(this.id)'>x</div>
+                <div id="box36" onclick='add(this.id)'>x</div>
+                <div id="box37" onclick='add(this.id)'>x</div>
+                <div id="box38" onclick='add(this.id)'>x</div>
+                <div id="box39" onclick='add(this.id)'>x</div>
+                <div id="box40" onclick='add(this.id)'>x</div>
+                <div id="box41" onclick='add(this.id)'>x</div>
+                <div id="box42" onclick='add(this.id)'>x</div>
+                <div id="box43" onclick='add(this.id)'>x</div>
+                <div id="box44" onclick='add(this.id)'>x</div>
+                <div id="box45" onclick='add(this.id)'>x</div>
+                <div id="box46" onclick='add(this.id)'>x</div>
+                <div id="box47" onclick='add(this.id)'>x</div>
+                <div id="box48" onclick='add(this.id)'>x</div>
+                <div id="box49" onclick='add(this.id)'>x</div>
+                <div id="box50" onclick='add(this.id)'>x</div>
+                <div id="box51" onclick='add(this.id)'>x</div>
+                <div id="box52" onclick='add(this.id)'>x</div>
+                <div id="box53" onclick='add(this.id)'>x</div>
+                <div id="box54" onclick='add(this.id)'>x</div>
+                <div id="box55" onclick='add(this.id)'>x</div>
+                <div id="box56" onclick='add(this.id)'>x</div>
+                <div id="box57" onclick='add(this.id)'>x</div>    
+                <div id="box58" onclick='add(this.id)'>x</div>
+                <div id="box59" onclick='add(this.id)'>x</div>
+                <div id="box60" onclick='add(this.id)'>x</div>
+                <div id="box61" onclick='add(this.id)'>x</div>
+                <div id="box62" onclick='add(this.id)'>x</div>
+                <div id="box63" onclick='add(this.id)'>x</div>
+            </div>
+        </div>
+        <div class="right">
+            <h2>Searched Words</h2>
+            <button onclick="reset()">Reset</button>
+            <div class="selectedwords" id="matched"></div>
+        </div>
+    </div>
+    
+    
+    
+    <script src="./script.js"></script>
+</body>
+</html>

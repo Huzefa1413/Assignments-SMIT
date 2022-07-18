@@ -1,0 +1,162 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: cursive;
+}
+body{
+    background-color: skyblue;
+}
+
+.main{
+    display: flex;
+}
+
+.main .left{
+    padding: 1% 1% 0px 1%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    font-size: 4vw;
+    color: white;
+    text-shadow: -1px -1px 0px blue,
+    3px 3px 0px blue,
+    6px 6px 0px blue;
+}
+.wordbox
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1%;
+}
+.wordbox div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    border: 1px solid black;
+    font-size: 2vw;
+    cursor: pointer;
+    width: 2.5vw;
+    height: 3vw;
+}
+
+.keyboard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+.row1
+{
+    display: flex;
+}
+.row2{
+    display: flex;
+}
+.row3{
+    display: flex;
+}
+.row1 div, .row2 div, .row3 div{
+    width: 5vw;
+    height: 5vw;
+    font-size: 3vw;
+    text-align: center;
+    margin: 0.5%;
+    cursor: pointer;
+    border-radius: 50px;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background-size: 300% 100%;
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+.row1 div:hover, .row2 div:hover, .row3 div:hover
+{
+    background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.row1 div:focus, .row2 div:focus, .row3 div:focus
+{
+    outline: none;
+}
+
+.right{
+    padding: 1% 1% 0px 1%;
+    margin: 1%;
+    border: 2px solid black;
+}
+h2{
+    font-size: 3vw;
+    color: white;
+    text-shadow: -1px -1px 0px blue,
+    3px 3px 0px blue,
+    6px 6px 0px blue;
+}
+.selectedwords{
+    margin-top: 10%;
+}
+h3{
+    font-size: 1.5vw;
+
+}
+button{
+    font-size: 2vw;
+    padding: 1%;
+    cursor: pointer;
+    border-radius: 50px;
+    margin: 5%;
+    padding: 3%;
+    border: none;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background-size: 300% 100%; 
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}
+button:hover{
+    background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+button:focus{
+    outline: none;
+}
+@media screen and (max-width:1000px){
+    .main{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    h1{
+        font-size: 6vw;
+    }
+    h2{
+        font-size: 5vw;
+    }
+    h3{
+        font-size: 3vw;
+    }
+    .main .left{
+        border: none;
+    }
+    .wordbox div{
+        width: 3vw;
+    }
+    button{
+        font-size: 4vw;
+    }
+}

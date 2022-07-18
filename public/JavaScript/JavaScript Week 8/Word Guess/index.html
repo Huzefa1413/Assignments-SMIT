@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Guess</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <h1>Word Guess</h1>
+            <div class="wordbox">
+                <div id="letter0"></div>
+                <div id="letter1"></div>
+                <div id="letter2"></div>
+                <div id="letter3"></div>
+                <div id="letter4"></div>
+                <div id="letter5"></div>
+                <div id="letter6"></div>
+                <div id="letter7"></div>
+                <div id="letter8"></div>
+                <div id="letter9"></div>
+                <div id="letter10"></div>
+                <div id="letter11"></div>
+                <div id="letter12"></div>
+                <div id="letter13"></div>
+                <div id="letter14"></div>
+                <div id="letter15"></div>
+                <div id="letter16"></div>
+                <div id="letter17"></div>
+                <div id="letter18"></div>
+                <div id="letter19"></div>
+                <div id="letter20"></div>
+                <div id="letter21"></div>
+                <div id="letter22"></div>
+                <div id="letter23"></div>
+                <div id="letter24"></div>
+                <div id="letter25"></div>
+                <div id="letter26"></div>
+                <div id="letter27"></div>
+            </div>
+            <div class="keyboard">
+                <div class="row1">
+                    <div id="alphabet0" onclick="add(this.id)">q</div>
+                    <div id="alphabet1" onclick="add(this.id)">w</div>
+                    <div id="alphabet2" onclick="add(this.id)">e</div>
+                    <div id="alphabet3" onclick="add(this.id)">r</div>
+                    <div id="alphabet4" onclick="add(this.id)">t</div>
+                    <div id="alphabet5" onclick="add(this.id)">y</div>
+                    <div id="alphabet6" onclick="add(this.id)">u</div>
+                    <div id="alphabet7" onclick="add(this.id)">i</div>
+                    <div id="alphabet8" onclick="add(this.id)">o</div>
+                    <div id="alphabet9" onclick="add(this.id)">p</div>
+                </div>
+                <div class="row2">
+                    <div id="alphabet10" onclick="add(this.id)">a</div>
+                    <div id="alphabet11" onclick="add(this.id)">s</div>
+                    <div id="alphabet12" onclick="add(this.id)">d</div>
+                    <div id="alphabet13" onclick="add(this.id)">f</div>
+                    <div id="alphabet14" onclick="add(this.id)">g</div>
+                    <div id="alphabet15" onclick="add(this.id)">h</div>
+                    <div id="alphabet16" onclick="add(this.id)">j</div>
+                    <div id="alphabet17" onclick="add(this.id)">k</div>
+                    <div id="alphabet18" onclick="add(this.id)">l</div>
+                </div>
+                <div class="row3">
+                    <div id="alphabet19" onclick="add(this.id)">z</div>
+                    <div id="alphabet20" onclick="add(this.id)">x</div>
+                    <div id="alphabet21" onclick="add(this.id)">c</div>
+                    <div id="alphabet22" onclick="add(this.id)">v</div>
+                    <div id="alphabet23" onclick="add(this.id)">b</div>
+                    <div id="alphabet24" onclick="add(this.id)">n</div>
+                    <div id="alphabet25" onclick="add(this.id)">m</div>
+                </div>
+
+            </div>
+        </div>
+        <div class="right">
+            <h2>Guessed Words</h2>
+            <button onclick="reset()">Reset</button>
+            <div class="selectedwords" id="matched"></div>
+        </div>
+    </div>
+    
+    
+    
+    <script src="./script.js"></script>
+</body>
+</html>
