@@ -2,12 +2,11 @@
     margin: 0;
     padding: 0;
 }
-body{
-    background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
-}
+
 nav{
-    background-image: linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673);
+    background-color: black;
     color: white;
+    font-weight: bold;
     height: 65px;
     font-size: 27px;
     display: flex;
@@ -61,6 +60,7 @@ nav ul{
     margin: 10px;
     padding: 10px;
     background-color: red;
+    text-align: center;
 }
 .resetButton{
     align-items: center;

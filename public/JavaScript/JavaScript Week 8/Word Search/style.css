@@ -31,6 +31,7 @@ h1{
     align-items: center;
     justify-content: center;
     margin-top: 1%;
+    max-width: 80vw;
 }
 .wordbox div{
     display: flex;
@@ -40,8 +41,9 @@ h1{
     border: 1px solid black;
     font-size: 2vw;
     cursor: pointer;
-    width: 2.5vw;
+    width: 3vw;
     height: 3vw;
+    display: none;
 }
 
 .container{
@@ -115,9 +117,15 @@ button:focus{
     }
     h1{
         font-size: 6vw;
+        text-shadow: -1px -1px 0px blue,
+    2px 2px 0px blue,
+    3px 3px 0px blue;
     }
     h2{
         font-size: 5vw;
+        text-shadow: -1px -1px 0px blue,
+    2px 2px 0px blue,
+    3px 3px 0px blue;
     }
     h3{
         font-size: 3vw;
@@ -129,20 +137,38 @@ button:focus{
     .main .left{
         border: none;
     }
-    
+    .container div{
+        font-size: 3vw;
+    }
+    .wordbox{
+        max-width: 95vw;
+    }
+    .wordbox div{
+        width: 5vw;
+        height: 5vw;
+        font-size: 3vw;
+    }
 }
 @media screen and (max-width:500px){
     .container{
         grid-template-rows: repeat(8, 10vw);
         grid-template-columns: repeat(8, 10vw);
+        margin-top: 5%;
     }
     .container div{
-        font-size: 3vw;
+        font-size: 5vw;
+    }
+    .wordbox{
+        max-width: 95vw;
+        margin-top: 5%;
     }
     .wordbox div{
-        width: 3vw;
-        height: 5vw;
-        font-size: 3vw;
+        width: 7vw;
+        height: 7vw;
+        font-size: 4.5vw;
+    }
+    .right{
+        margin-top: 5%;
     }
     button{
         font-size: 4vw;
