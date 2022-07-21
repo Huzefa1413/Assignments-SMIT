@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.mainbody{
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: change 10s ease-in-out infinite;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+@keyframes change{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+div.mainbody nav{
+    width: 90%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding: 9px;
+    position: absolute;
+    top: 5px;
+}
+div.mainbody nav .logo{
+    width: 30%;
+    height: 40px;
+    margin-left: 100px;
+}
+div.mainbody nav .logo img{
+    height: 40px;
+    cursor: pointer;
+}
+div.mainbody nav ul{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    color: white;
+    font-family: Helvetica;
+    font-size: large;
+    font-weight: bold;
+}
+div.mainbody nav ul li{
+    cursor: pointer;
+}
+div.mainbody nav ul li:hover{
+    color: red;
+}
+div.mainbody .name{
+    color: white;
+    text-align: center;
+    font-family: Helvetica;
+}
+div.mainbody .name h1{
+    font-size: 3.125rem;
+    line-height: 1.1;
+    max-width: 640px;
+    position: absolute;
+    top: 190px;
+}
+div.mainbody .name h2{
+    font-size: 1.625rem;
+    font-weight: 400;
+    position: absolute;
+    left: 500px;
+}
